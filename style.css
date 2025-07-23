@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+nav {
+    display: flex;
+    width: 77vw;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 5px;
+}
+
+.btn {
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    padding: 9px 8px;
+    align-items: center;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.btn:hover {
+    background-color: #ca0913;
+}
+
+.netflix-logo {
+    width: 148px;
+    height: 40px;
+    fill: #e50914;
+    position: relative;
+    z-index: 10;
+}
+
+
+.signin-netlfix {
+    position: relative;
+    z-index: 10;
+    width: 74px;
+    height: 32px;
+}
+
+
+.netlix-wallpaper {
+    z-index: -11;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    height: 625px;
+    width: 100%;
+    background: url(netlix-wallpaper.jpg);
+    background-repeat: no-repeat;
+}
+
+.black {
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    height: 628px;
+    width: 100%;
+}
+
+.top-black {
+    opacity: 0.8;
+    background-color: #000000;
+    background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0) 70%);
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 100%;
+}
+
+.bottom-black {
+    opacity: 0.9;
+    background-color: #000000;
+    background: linear-gradient(to top, #000, rgba(0, 0, 0, 0) 70%);
+    position: absolute;
+    top: 528px;
+    height: 100px;
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 667px;
+    color: white;
+    position: relative;
+    left: 320px;
+    top: 100px;
+    gap: 21px;
+    padding: 0 30px;
+}
+
+
+.heading> :nth-child(1) {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.heading> :nth-child(2) {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+
+.heading> :nth-child(3) {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.input-flex {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-flex :nth-child(1) {
+    background-color: rgba(32, 32, 32, 0.5);
+    padding: 10px 13px;
+    padding-left: 15px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border: none;
+    border: 1px solid grey;
+    width: 350px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.input-flex :nth-child(1)::placeholder {
+    color: rgb(184, 184, 184);
+}
+
+.input-flex :nth-child(2) {
+    border: none;
+    height: 55px;
+    width: 200px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.curve-line {
+    position: relative;
+    top: 270px;
+    width: 1550px;
+    left: -15%;
+    align-items: center;
+    border: solid .14em transparent;
+    background-color: rgb(184, 0, 0);
+    border-radius: 200px;
+    height: 7px;
+    z-index: 20;
+}
+
+body {
+    position: relative;
+    top: 0;
+    background-color: #000000;
+}
+
+main {
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+section {
+    color: white;
+}
+
+.seperation {
+    position: relative;
+    top: 206px;
+    width: 100%;
+    height: 3px;
+    background-color: #ff0000;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    background: linear-gradient(to right,
+            rgba(33, 13, 22, 1) 16%,
+            rgba(184, 40, 105, 1),
+            rgba(229, 9, 20, 1),
+            rgba(184, 40, 105, 1),
+            rgba(33, 13, 22, 1) 84%);
+    box-shadow: -9px 14px 20px 2px blue;
+}
+
+.box {
+    height: 30px;
+    width: 100%;
+    position: relative;
+    top: 150vh;
+    background-color: #000;
+}
+
+.trend-container {
+    position: relative;
+    top: 250px;
+}
+
+.trend-container h2 {
+    color: white;
+    position: relative;
+    padding: 25px 190px;
+}
+
+.trend-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.trend-container ul li {
+    height: 300px;
+    width: 197px;
+    transition: all 0.5s ease-out;
+}
+
+.trend-container ul li:hover {
+    transform: scale(1.07);
+}
+
+.trend-container ul li img {
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+li .number {
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 140px;
+    right: 30px;
+    z-index: 12;
+    font-size: 6.25rem;
+    font-weight: 900;
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.reason-container h2 {
+    position: relative;
+    padding: 25px 150px;
+    color: white;
+}
+
+.cont1 {
+    width: 251.75px;
+    height: 318px;
+    border-radius: 16px;
+    background: linear-gradient(to bottom right, #1A1E3E, #210E17);
+}
+
+.cont1 h2 {
+    color: white;
+    padding: 25px 18px;
+    font-size: 24px;
+}
+
+.cont1 p {
+    color: rgba(255, 255, 255, 0.7);
+    align-items: center;
+    padding: 0 18px;
+    font-weight: 500;
+}
+
+.cont1 svg {
+    position: relative;
+    left: 170px;
+    top: 80px;
+}
+
+.cont2 {
+    width: 251.75px;
+    height: 318px;
+    border-radius: 16px;
+    background: linear-gradient(to bottom right, #1A1E3E, #210E17);
+}
+
+.cont2 h2 {
+    color: white;
+    padding: 25px 18px;
+    font-size: 24px;
+}
+
+.cont2 p {
+    color: rgba(255, 255, 255, 0.7);
+    align-items: center;
+    padding: 0 18px;
+    font-weight: 500;
+}
+
+.cont2 svg {
+    position: relative;
+    left: 170px;
+    top: 40px;
+}
+
+.cont3 {
+    width: 251.75px;
+    height: 318px;
+    border-radius: 16px;
+    background: linear-gradient(to bottom right, #1A1E3E, #210E17);
+}
+
+.cont3 h2 {
+    color: white;
+    padding: 25px 18px;
+    font-size: 24px;
+}
+
+.cont3 p {
+    color: rgba(255, 255, 255, 0.7);
+    align-items: center;
+    padding: 0 18px;
+    font-weight: 500;
+}
+
+.cont3 svg {
+    position: relative;
+    left: 170px;
+    top: 100px;
+}
+
+.cont4 {
+    width: 251.75px;
+    height: 318px;
+    border-radius: 16px;
+    background: linear-gradient(to bottom right, #1A1E3E, #210E17);
+}
+
+.cont4 h2 {
+    color: white;
+    padding: 25px 18px;
+    font-size: 24px;
+}
+
+.cont4 p {
+    color: rgba(255, 255, 255, 0.7);
+    align-items: center;
+    padding: 0 18px;
+    font-weight: 500;
+}
+
+.cont4 svg {
+    position: relative;
+    left: 170px;
+    top: 55px;
+}
+
+.reason-container {
+    position: relative;
+    top: 250px;
+}
+
+.reason-container-flex {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.questions {
+    position: relative;
+    top: 300px;
+}
+
+.questions h2 {
+    font-size: 24px;
+    padding: 20px 150px;
+    color: white;
+}
+
+.freq-questions {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    cursor: pointer;
+}
+
+
+.ques1 {
+    height: 84px;
+    width: 1055px;
+    background-color: #2D2D2D;
+    position: relative;
+    color: white;
+    padding: 27px 25px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.ques1:hover{
+    background-color: #414141;
+}
+
+.ques2 {
+    height: 84px;
+    width: 1055px;
+    background-color: #2D2D2D;
+    position: relative;
+    color: white;
+    padding: 27px 25px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.ques2:hover{
+    background-color: #414141;
+}
+.ques3 {
+    height: 84px;
+    width: 1055px;
+    background-color: #2D2D2D;
+    position: relative;
+    color: white;
+    padding: 27px 25px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.ques3:hover{
+    background-color: #414141;
+}
+.ques4 {
+    height: 84px;
+    width: 1055px;
+    background-color: #2D2D2D;
+    position: relative;
+    color: white;
+    padding: 27px 25px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.ques4:hover{
+    background-color: #414141;
+}
+
+.ques5 {
+    height: 84px;
+    width: 1055px;
+    background-color: #2D2D2D;
+    position: relative;
+    color: white;
+    padding: 27px 25px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.ques5:hover{
+    background-color: #414141;
+}
+
+.ques6 {
+    height: 84px;
+    width: 1055px;
+    background-color: #2D2D2D;
+    position: relative;
+    color: white;
+    padding: 27px 25px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.ques6:hover{
+    background-color: #414141;
+}
+
+.space1{
+    position: relative;
+    left: 71vw;
+    bottom:  8vh;
+    font-size: 67px;
+}
+.space2{
+    position: relative;
+    left: 71vw;
+    bottom: 8vh;
+    font-size: 67px;
+}
+.space3{
+    position: relative;
+    left: 71vw;
+    bottom: 8vh;
+    font-size: 67px;
+}
+.space4{
+    position: relative;
+    left: 71vw;
+    bottom:  8vh;
+    font-size: 67px;
+}
+.space5{
+    position: relative;
+    left: 71vw;
+    bottom: 8vh;
+    font-size: 67px;
+}
+.space6{
+    position: relative;
+    left: 71vw;
+    bottom: 8vh;
+    font-size: 67px;
+}
+
+.email-end{
+    position: relative;
+    top: 370px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.email-heading{
+    color: white;
+    padding: 0 15vw;
+}
+.email-flex :nth-child(1) {
+    background-color: rgba(32, 32, 32, 0.5);
+    padding: 10px 13px;
+    padding-left: 15px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border: none;
+    border: 1px solid grey;
+    width: 40vw;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.email-flex :nth-child(1)::placeholder {
+    color: rgb(184, 184, 184);
+}
+.email-flex :nth-child(2) {
+    border: none;
+    height: 55px;
+    width: 200px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    border-radius: 3px;
+    align-items: center;
+}
